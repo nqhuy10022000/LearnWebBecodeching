@@ -1,0 +1,13 @@
+cursor: pointer; ==> Hình ngón tay trỏ
+
+hover thằng cha thì thằng con làm gì
+.cha:hover button{
+    background-color: lightblue;
+    color: #ffffff
+}
+
+eva icons
+
+font awesome
+
+cdn font awesome 6

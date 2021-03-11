@@ -1,0 +1,4 @@
+IUColorpicker
+
+width: calc(100% / 4)
+

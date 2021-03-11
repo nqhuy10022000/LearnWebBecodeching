@@ -1,0 +1,45 @@
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+
+or 
+
+margin: auto;
+
+==> Căn giữa
+
+3 trường hợp căn giữa:
+display: flex;
+
+w50%
+h50%
+margin-...
+margin-...
+
+transfom: translate(-50%,-50%);
+
+100vh ==> full màn hình theo chiều cao
+100vw ==> full màn hình theo chiều rộng
+
+background-image: url();
+background-size: cover;
+background-position: center center;
+
+select dấu cách ==> dấu cách là cha con
+
+select > ==> ví dụ navbars > ul thì chỉ ul nằm trong navbars mới ăn được
+
+select + ==> Sát nhau liền kề nhất
+
+select ~ ==> Toàn bộ sau dẫu ~ thì ăn được
+
+p::after
+p::before
+
+p:nth-child()
+p:nth-last-child()
+o:first-of-type
+p::first-letter
+p::first-line
+

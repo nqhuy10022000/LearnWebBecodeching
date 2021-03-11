@@ -1,0 +1,43 @@
+fonts : Open stans
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+font-family: 'Open Sans', sans-serif;
+
+padding & margin trên thẻ inline chỉ ảnh hưởng bên phải bên trái
+
+Bình thường 
++) padding: 40px; thì nó sẽ padding ra 4 hướng
+top - right - bottom - left
+
++) padding: 20px 30px; ==> Hiểu cách top - bottom là 20px, cách right-left là 30px
+
++) padding: 20px 0px 30px ==> top 20 right 0 bottom 30 left 0
+
+Tắt chia màn hình Ctrl + W
+
+Reset CSS ==> quy tắt file reset.css luôn đặt ở đầu tiên
+Link reset CSS:    https://meyerweb.com/eric/tools/css/reset/
+
+----------------------------------------------------------------
+|Ko có style --> nhận trình duyệt				|
+|reset CSS							|
+|P(chorme,firefox,...)						|
+----------------------------------------------------------------
+
+Khoảng cách các từ cách xa nhau: letter-spacing: 1px;
+Nét chữ to hơn nặng hơn: font-weight: bold;
+text-transform: capitalize ==> Viết hoa từng chữ cái đầu mỗi từ ( Sau mỗi dấu cách)
+text-transform: lowercase ==> Thường
+
+text-decoration: underline;==>gạch chân
+text-decoration: none;==> ko gạch chân
+
+Canh giữa: text-align: ...;
+
+Thẻ inline (a,span) thì có width nên ko sử dụng được text-align
+
+chuyển inline sang block thì display: block; 
+
+

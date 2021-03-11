@@ -1,0 +1,40 @@
+Phím tắt ra đường dẫn: Ctrl + space
+
+Điểm khác nhau giữa class và id
+
+class có thể sử dụng lại nhiều lần (Người sử dụng nhiều class hơn so với id)
+
+id được ưu tiên hơn so với class (id là duy nhất)
+
+id sử dụng duy nhất không được trùng
+
+1 div nhiều class
+1 div có 1 id
+
+.margin{
+    background-color: blue;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.margin-2{
+    background-color: red;
+    margin-top: 40px;
+}
+
+Nếu margin giáp nhau thì nó sẽ lấy số lớn hơn
+
+margin-left:auto;
+margin-right:auto;
+==> Căn giữa 1
+
+margin: 0 auto;
+==> Căn giữa 2
+
+padding ko âm, margin có thể âm
+
+white-space: nowrap; ==> Đoạn text chắc chắn nằm trên 1 dòng
+
+overflow:hidden; ==> ẩn 
+
+text-overflow: ellipsis; ==> Xử lý trường hợp chữ hiện không đủ thì sẽ xuất hiện dấu 3 chấm

@@ -1,0 +1,9 @@
+Học ngôn ngữ mới
+1.Tìm hiểu kiểu dữ liệu
+2. if else (switch case)
+3.Function(hàm)
+4.Cách khai báo biến
+
+
+
+1.const, let, var(Không nên dùng)

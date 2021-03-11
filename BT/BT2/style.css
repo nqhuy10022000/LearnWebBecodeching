@@ -1,0 +1,31 @@
+.container{
+    max-width: 1270px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+}
+
+.navbars ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbars ul li a{
+    text-transform: capitalize;
+    margin-right: auto;
+    padding: 5px;
+}

@@ -1,0 +1,44 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .bg-blue{
+    background-color: blue;
+}
+
+.mr-20{
+    margin: 20px;
+} */
+
+/* #text-primary{
+    color: cyan;
+} */
+
+/* .text-primary{
+    color: red;
+}
+
+.font-size-primary{
+    font-size: 50px;
+} */
+
+.text{
+    background-color: #333333;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: tomato;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+/* .margin-2{
+    background-color: red;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+} */

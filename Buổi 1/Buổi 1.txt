@@ -1,0 +1,16 @@
+Inline
+- Có chiều dài = nội dung của nó
+- Có nhiều thẻ trên 1 hàng
+
+
+
+Block
+- Có chiều dài hết 1 dòng
+- 1 thẻ 1 hàng
+
+
+NOTE:- Thẻ block nên bộc ngoài cùng
+- 2 thẻ a ko nên lồng vào nhau
+
+surge.sh --> copy : npm install --global surge
+windows + r --> cmd --> npm install --global surge

@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60%;
+    background-color: rgb(61, 61, 61);
+}
+
+.title{
+    color: yellow;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.title1{
+    color: grey;
+    text-align: right;
+}
+
+.ten{
+}

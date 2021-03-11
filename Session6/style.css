@@ -1,0 +1,96 @@
+/* .container{
+    margin-top: 50px;
+} */
+
+/* .text{
+    background-color: tomato;
+    min-width: 200px;
+    max-width: 300px;
+     width: 200px; 
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 10px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 2px solid #000000;
+    margin-top: 50px;
+
+     height: auto; 
+    min-height: 100px;
+    max-height: 200px;
+} */
+
+/* .input{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000000;
+    background-color: tomato;
+    width: 200px;
+    min-height: 50px;
+    max-height: 100px;
+    overflow-y: scroll;
+} */
+
+/* img{
+    max-width: 100%;
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    background-color: tomato;
+} */
+
+
+/* button{
+    width: 400px;
+    height: 200px;
+    font-size: 50px;
+    border: 10px solid red;
+    border-radius: 100px;
+} */
+
+/* img{
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+    border: 10px solid red;
+    border-radius: 50%;
+    display: block;
+} */
+
+/* button{
+    width: 400px;
+    height: 200px;
+    font-size: 50px;
+    border: 10px solid red;
+    border-radius: 0;
+    display: block;
+} */
+
+/* button:hover{
+    border:10px solid blue;
+    font-size: 40px;
+    border-radius: 100px;
+} */
+
+/* a{
+    width: 20px;
+}
+
+a:link{
+    color: red;
+}
+
+a:visited{
+    color: cadetblue;
+}
+
+a:hover{
+    color: violet;
+}
+
+a:active{
+    color: yellow;
+} */
+

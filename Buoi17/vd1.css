@@ -1,0 +1,42 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://th.bing.com/th/id/R34c8b54949c693a648d7a83258ba44de?rik=h39vA1172wrUdQ&riu=http%3a%2f%2fbellstmall.com.au%2fwp-content%2fuploads%2f2020%2f01%2fBell-St-Mall-Lunar-New-Year-2020-Event-Banner.jpg&ehk=4YCQIW1zF47M3cqg1VIiEHERwoWzEMqtfIef9m6dD50%3d&risl=&pid=ImgRaw");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .time-item {
+  margin: 0 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.container p {
+  font-size: 80px;
+}
+
+.container span {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=vd1.css.map */

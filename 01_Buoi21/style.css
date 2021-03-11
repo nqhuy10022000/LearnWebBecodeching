@@ -1,0 +1,99 @@
+ul li {
+    list-style: none;
+    font-style: 20px;
+}
+
+/* ==================================================== */
+
+/* 1. * */
+/* 2. tag */
+/* 3. class */
+/* 4. id */
+
+/* tag:        0-0-0-1
+   class:      0-0-1-0
+   id:         0-1-0-0
+   !important: 1-0-0-0 */
+
+
+
+/* a {
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    color: blue;
+}
+
+.menu-item {
+    text-transform: uppercase;
+}
+
+#main {
+    background-color: red;
+} */
+
+/* li#contact {
+    color: cyan;
+    font-size: 40px;
+}
+
+li.menu-item {
+    color: red;
+    font-size: 30px;
+}
+
+.menu-item {
+    color: blue;
+    text-transform: uppercase;
+    display: block;
+    margin: 10px 0;
+} */
+
+li:hover {
+    color: blue;
+}
+
+li {
+    color: red;
+}
+
+.form-control  label {
+    display: block;
+    font-size: 12px;
+
+    border: 1px solid brown;
+    background-color: brown;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-align: center;
+    max-width: 200px;
+    color: #fff;
+}
+
+.form-control input {
+    padding: 6px 10px;
+    font-size: 14px;
+    color: red;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+}
+
+/* .email {
+    color: red;
+}
+
+input[type="text"] {
+    color: blue;
+} */
+
+input[type="file"] {
+    display: none;
+    position: absolute;
+    z-index: 9999999999;
+    opacity: 0;
+}
+
+input:focus {
+    color: blue;
+}

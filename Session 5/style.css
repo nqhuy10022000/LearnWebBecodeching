@@ -1,0 +1,142 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* span{
+    color: lightblue;
+    display: none;
+    display: block;
+    visibility: hidden;
+}  */
+
+/* p{
+    background-color: lightgreen;
+    display: inline-block;
+    width: 100px;
+    color: lightyellow;
+} */
+
+/* *{
+    color:darkorchid;
+} */
+
+/* #header{
+    color: red;
+}
+
+/* .header{
+    color:greenyellow !important;
+} */
+
+/* .header{
+    color: grey;
+}
+.header{
+    color: red;
+} */
+/* p{
+    color: red;
+}
+
+p span:nth-child(1){
+    color: green;
+}
+
+span{
+    color: blue;
+} */
+
+body{
+    background-color: #79d6cc;
+}
+
+a{
+   text-decoration: none; 
+   color: #333333;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbars ul{
+    display: flex;
+}
+
+.container{
+    max-width: 1270px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    margin-top: 20px;
+}
+
+.navbars ul li a{
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: #ffffff;
+    background-color: #23385C;
+    border-radius: 50px;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.logo a{
+    font-size: 15px;
+    background-color: #23385C;
+    color: #fff;
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbars ul li a:hover{
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 5px 20px;
+    color:  #23385C;
+    background-color:  #79d6cc;
+    border-radius: 50px;
+    margin: 0 30px;
+    border: 1px solid black;
+}
+
+.logo a:hover{
+    font-size: 25px;
+    background-color: #23385C;
+    color: #fff;
+    padding: 5px;
+    margin-left: 50px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-menu{
+    /* display: flex; */
+    flex-direction: column;
+    border: 2px solid red;
+    margin-top: 30px;
+    position: absolute;
+    top: 22px;
+    width: 100%;
+    height: 100px;
+    opacity: 1;
+}
+
+.navbars > ul li{
+    border: 2px solid violet;
+}

@@ -1,0 +1,31 @@
+object-fit: cover; ==> ảnh hiện thị cho đẹp
+
+overflow: hidden;
+text-overflow: ellipsis;
+//white-space: nowrap;
+=> Quá dài thì hiện 3 chấm
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+
+==> Có 5 dòng này, khi muốn show sản phẩm với dòng dài
+
+border-radius: 999px; ==> Sẽ chuẩn hơn
+
+border: none;
+outline: none;
+
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -25px;
+margin-left: -25px;
+==> Căn giữa
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+==> Căn giữa
+
+ 

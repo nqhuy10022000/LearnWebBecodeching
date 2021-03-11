@@ -1,0 +1,25 @@
+CSS
+c1: <h2 style="color: red;"> <\h2>
+color:
+	rgb(255,0,0)
+	#000000
+	#000
+	#F3F3F3
+
+[property] : value
+
+border(đường viền): độ rộng - khung viền - màu sắc 
+border-width : 10px;
+border-style : solid;
+border-color : red;
+
+padding đẩy vô
+
+margin đẩy ra
+
+Nếu ở trong border thì so với cha
+Còn ở ngoài thì so với body
+
+Kiểu chữ: font-family: 
+google fonts
+c2:

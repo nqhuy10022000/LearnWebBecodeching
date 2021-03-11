@@ -1,0 +1,35 @@
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 620px;
+    height: 133px;
+    // overflow: hidden;
+
+    img{
+        width: 200px;
+        height: 133px;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
+
+    // img:hover{
+    //     transform: translateX(500px);
+    // }
+
+    img:nth-child(1){
+        transition: all 0.5s linear 0.5s;
+        transform: translateX(200px);
+    }
+    img:nth-child(2){
+        transition: all 0.5s linear 1s;
+        transform: translateX(200px);
+    }
+    img:nth-child(3){
+        transition: all 0.5s linear 1.5s;
+        transform: translateX(200px);
+    }
+}

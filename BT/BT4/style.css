@@ -1,0 +1,155 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 96%;
+    margin: 0 auto;
+    margin: 30px;
+    background-color: rgb(209, 212, 212);
+}
+
+.block{
+    margin: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.block .block-item{
+    border: 1px solid rgb(172, 172, 172);
+    flex-basis: calc(calc(100% - 30px) / 3);
+}
+
+.block .block-item .image{
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.note{
+    background-color: rgb(55, 212, 55);
+    border: 1px solid none;
+    margin: 10px;
+    border-radius: 999px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: honeydew;
+}
+
+.note1{
+    max-width: 25px;
+    max-height: 15px;
+}
+.note2{
+    max-width: 30px;
+    max-height: 15px;
+}
+.note3{
+    max-width: 30px;
+    max-height: 15px;
+}
+
+.block .block-item .font
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+    margin: 0 15px 0 15px;
+}
+
+.block .block-item .time
+{
+    font-size: 15px;
+    font-style: italic;
+    margin: 0 15px 10px 15px;
+    color: grey;
+}
+
+.block .block-item .text{
+    width: 96%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    margin: 0 15px 10px 15px;
+}
+
+.block2{
+    background-color: rgb(209, 212, 212);
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+} 
+
+.block2 .block-item{
+    width: 200px;
+    border: 1px solid rgb(172, 172, 172);
+    margin: 10px 5px;
+}
+
+.block2 .block-item .image{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.block2 .block-item .h1{
+    font-size: 15px;
+    margin: 0 20px 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.block2 .block-item .money{
+    color: orangered;
+    margin: 0 20px 0 15px;
+    font-size: 20px;
+}
+
+.block2 .block-item .money2{
+    text-decoration: line-through;
+    color: grey;
+    margin: 0 20px 0 15px;
+    font-size: 12px;
+}
+
+.block2 .block-item .giam{
+    font-size: 12px;
+    color: grey;
+    margin-left: -20px;
+}
+
+.block2 .block-item .margin{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.block2 .block-item .color{
+    color: rgb(196, 196, 50);
+}
+
+.block2 .block-item .number{
+    font-size: 10px;
+    color: grey;
+    vertical-align: baseline;
+}
+
+.block2 .block-item .city{
+    font-size: 10px;
+    color: grey;
+    text-align: right;
+}

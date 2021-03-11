@@ -1,0 +1,42 @@
+overflow-y: scroll; ==> thanh kéo theo chiều dọc theo trục y
+
+min-height: 50px; ==> nó sẽ hiện thị ra 1 ô có giới hạn ko bị thay đổi
+
+max-height: 50px;==>Nhập bao nhiêu hiển thị chiều cao bấy nhiêu ko quan tâm bn px
+
+img theo max-width: ; ==> để ko bị vỡ hình và đẹp
+
+Khi sài với hình cần sử dụng max-width: 100%, & object-fit: cover;
+
+bo tròn ==> border-radius: ;
+
+border-radius <= (height / 2)
+
+button:hover{
+	border-color : blue;
+}
+==> Khi re chuột đến là chuyển màu
+
+a:visited{
+    color: cadetblue;
+}
+==>Lúc bình thường
+
+a:hover{
+    color: violet;
+}
+==> re chuột đến
+
+a:active{
+    color: yellow;
+}
+==> Khi click chuột
+
+a:link{
+    color: red;
+}
+==>Khi chưa được click
+
+Độ ưu tiên: p.class > class
+
+BT: menu khi hover

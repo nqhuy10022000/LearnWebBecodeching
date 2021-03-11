@@ -1,0 +1,35 @@
+display : block;
+
+display : none;
+
+visibility : hidden;
+
+display: inline-block;
+width: 100px;
+
+display: flex; ==> sử dụng trên thẻ cha gần nhất ==> dùng để nằm ngang hàng nhau
+
+Thẻ p ưu tiên hơn thẻ *
+
+Class có độ ưu tiên hơn element ( Ví dụ p)
+
+*<element<class<id<inline css <.... !important;
+
+ul thẻ danh sách ko có thứ tự
+
+ol thẻ danh sách có thứ tự
+
+./../ ==> .. lùi thêm 1 bước 
+
+max-width: 1270px; ==> 
+
+margin: 96%; ==> 
+
+justify-content: space-between;
+
+display: flex;
+justify-content: center;
+align-items: center;
+==> Căn giữa
+
+border-radius: 50%; ==> border hình tròn

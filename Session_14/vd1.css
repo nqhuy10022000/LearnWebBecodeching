@@ -1,0 +1,40 @@
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 620px;
+  height: 133px;
+}
+
+.container img {
+  width: 200px;
+  height: 133px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.container img:nth-child(1) {
+  -webkit-transition: all 0.5s linear 0.5s;
+  transition: all 0.5s linear 0.5s;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.container img:nth-child(2) {
+  -webkit-transition: all 0.5s linear 1s;
+  transition: all 0.5s linear 1s;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.container img:nth-child(3) {
+  -webkit-transition: all 0.5s linear 1.5s;
+  transition: all 0.5s linear 1.5s;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+/*# sourceMappingURL=vd1.css.map */
