@@ -1,0 +1,56 @@
+@mixin brand {
+    .brand {
+        display: flex;
+        justify-content: space-around;
+        height: 105px;
+    }
+
+    .brand .logo {
+        padding: 20px 0;
+        padding-left: 61px;
+    }
+
+    .brand form.search {
+        display: flex;
+        padding-top: 40px;
+    }
+
+    .brand form.search input[type="text"] {
+        padding: 10px;
+        font-size: 15px;
+        border: 1px solid grey;
+        width: 500px;
+        height: 20px;
+        background-color: white;
+    }
+
+    .brand form.search button {
+        height: 42px;
+        width: 20%;
+        padding: 10px;
+        background: #958458; 
+        color: white;
+        font-size: 15px;
+        border: 1px solid grey;
+        cursor: pointer;
+    }
+
+    .brand form.search button:hover {
+        background: #9b927a;
+    }
+
+    .brand form.search::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .brand .item {
+        padding-right: 100px;
+    }
+
+    .brand .item img {
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+}

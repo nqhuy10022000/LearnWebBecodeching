@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import "header";
+@import "brand";
+.container {
+    @include header();
+    @include brand();
+}
+
+@import "menu-row";
+.menu-row {
+    @include menu-row();
+}
+
+@import "menu-col";
+.menu-col {
+    @include menu-col();
+}
+
+@import "slideShow";
+.slideShow-container {
+    @include slideShow();
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>
+                <i class="fas fa-phone-alt"></i>
+                Hotline:0908 77 00 95
+            </span>
+            <ul>
+                <li class="header-item">
+                    <a href="">
+                        <i class="fal fa-comment-alt-edit"></i>
+                        Kiểm tra đơn hàng
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="">
+                        <i class="fas fa-shopping-cart"></i>
+                        Giỏ hàng
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Đăng nhập
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="">
+                        <i class="fas fa-key-skeleton"></i>
+                        Đăng ký
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="brand">
+            <div class="logo">
+                <img src="./Ảnh/logo2.png" alt="">
+            </div>
+            <form class="search" action="">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm ..." name="search"> 
+                <button type="submit"><span>Tìm Kiếm</span></button>
+            </form>
+            <div class="item">
+                <img src="./Ảnh/icon-cart-round.png" alt="">
+                <img src="./Ảnh/hd-login.png" alt="">
+            </div>
+        </div>
+        <div class="menu-row">
+            <ul class="list-menu">
+                <li class="menu-item">
+                    <span>Danh mục sản phẩm 
+                        <span><i class="fas fa-bars"></i></span>
+                    </span>
+                </li>
+                <li class="menu-item"><a href="">Trang Chủ</a></li>
+                <li class="menu-item"><a href="">Sản Phẩm</a></li>
+                <li class="menu-item"><a href="">Giới Thiệu</a></li>
+                <li class="menu-item"><a href="">Tin Tức</a></li>
+                <li class="menu-item"><a href="">Liên Hệ</a></li>
+            </ul>
+        </div>
+        <div class="menu-col">
+            <ul class="list-menu">
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-bags-shopping"></i>
+                        Thời Trang
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-mobile"></i>
+                        Điện Thoại & Ipad
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-lips"></i>
+                        Mỹ Phẩm
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-futbol"></i>
+                        Thể Thao
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-baby"></i>
+                        Mẹ và Bé
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-headphones-alt"></i>
+                        Phụ kiện công nghệ
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-laptop"></i>
+                        Laptop
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-rings-wedding"></i>
+                        Trang Sức
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-microchip"></i>
+                        Điện lạnh
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-palette"></i>
+                        Nội Thất
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="">
+                        <i class="fal fa-camera-retro"></i>
+                        Máy Ảnh
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="slideShow-container">
+            <div class="slideShow">
+                <div class="slide fade">
+                    <img src="./Ảnh/banner_silder_2.jpg" alt="">
+                </div>
+                <div class="slide fade">
+                    <img src="./Ảnh/banner_silder_3.jpg" alt="">
+                </div>
+                <div class="slide fade">
+                    <img src="./Ảnh/banner_silder_4.jpg" alt="">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="three-dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <script src="./slideShow.js"></script>
+        </div>
+    </div>
+</body>
+</html>

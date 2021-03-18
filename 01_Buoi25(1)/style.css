@@ -1,0 +1,30 @@
+.width {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    animation-name: strengthWith;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-delay: 2s; */
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+/* @keyframes strengthWith {
+    0% {
+        width: 100px;
+    }
+    100% {
+        width: 700px;
+    }
+} */
+
+@keyframes strengthWith {
+    from {
+        width: 200px;
+    }
+    to {
+        width: 1000px;
+    }
+}

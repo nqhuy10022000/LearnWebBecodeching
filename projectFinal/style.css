@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  background-color: #f5f5f5;
+}
+
+.container .header span {
+  color: red;
+  padding: 5px 80px;
+}
+
+.container .header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 550px;
+}
+
+.container .header ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #b2b7bd;
+}
+
+.container .header ul li a:hover {
+  background-color: #d8d3c3;
+  padding-bottom: 7px;
+}
+
+.container .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 105px;
+}
+
+.container .brand .logo {
+  padding: 20px 0;
+  padding-left: 61px;
+}
+
+.container .brand form.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+}
+
+.container .brand form.search input[type="text"] {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid grey;
+  width: 500px;
+  height: 20px;
+  background-color: white;
+}
+
+.container .brand form.search button {
+  height: 42px;
+  width: 20%;
+  padding: 10px;
+  background: #958458;
+  color: white;
+  font-size: 15px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.container .brand form.search button:hover {
+  background: #9b927a;
+}
+
+.container .brand form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container .brand .item {
+  padding-right: 100px;
+}
+
+.container .brand .item img {
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.menu-row ul {
+  background-color: #958458;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 100px;
+}
+
+.menu-row li a {
+  display: block;
+  padding: 17px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-row li a:hover {
+  background-color: #eee2c5;
+  color: #9b927a;
+}
+
+.menu-row li span {
+  display: block;
+  padding: 16px 5px 16px 15px;
+  color: white;
+  background-color: #4c311c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.menu-row li span span {
+  display: inline;
+  padding: 16px 5px 16px 25px;
+}
+
+.menu-col ul {
+  width: 247px;
+  padding: 0;
+  padding-left: 100px;
+  text-align: center;
+}
+
+.menu-col li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+}
+
+.menu-col li a {
+  text-decoration: none;
+  color: #958458;
+  font-weight: 500;
+  display: block;
+}
+
+.menu-col li a:hover {
+  background-color: #958458;
+  color: white;
+}
+
+.slideShow-container .slideShow {
+  max-width: 1000px;
+  position: relative;
+}
+
+.slideShow-container .slideShow .slide img {
+  margin-left: 347px;
+  margin-top: -457px;
+  padding-bottom: 14px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.slideShow-container .prev {
+  cursor: pointer;
+  position: absolute;
+  top: -248px;
+  left: 350px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slideShow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: -248px;
+  right: -242px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 3px 0 0 3px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.slideShow-container .prev:hover, .slideShow-container .next:hover {
+  background-color: #958458;
+  border-radius: 0px;
+}
+
+.slideShow-container .three-dot {
+  position: absolute;
+  top: -36px;
+  right: 159px;
+  z-index: 99999;
+}
+
+.slideShow-container .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.slideShow-container .dot:hover {
+  background-color: #958458;
+}
+
+.slideShow-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,105 @@
+//TODO: mixin: param
+
+// @mixin message($line: 3) {
+//     margin: 50px;
+//     padding: 10px;
+//     width: 200px;
+//     height: 150px;
+//     border-radius: 8px;
+//     background: purple;
+
+//     p{
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//         display: -webkit-box;
+//         -webkit-box-orient: vertical;
+//         -webkit-line-clamp: $line;
+//     }
+// }
+
+// .message1 {
+//     @include message(2);
+// }
+
+// .message2 {
+//     @include message(3);
+// }
+
+//TODO: if vs else
+
+// @mixin message($line: 3) {
+//     margin: 50px;
+//     padding: 10px;
+//     width: 200px;
+//     height: 150px;
+//     border-radius: 8px;
+
+//     @if($line == 3){
+//         background: red;
+//     }
+//     @else{
+//         background: yellow;
+//     }
+//     p{
+//         overflow: hidden; // ẩn những dòng
+//         text-overflow: ellipsis; // 3 chấm cuối
+//         display: -webkit-box;
+//         -webkit-box-orient: vertical;
+//         -webkit-line-clamp: $line;
+//     }
+// }
+
+
+//TODO:  import
+// @import "mixin";
+
+// .message1 {
+//     @include message(4);
+// }
+
+// .message2 {
+//     @include message(3);
+// }
+
+//========================================
+// $length: 10;
+// ul{
+//     li{
+//         height: 50px;
+//         // [1,10], còn to thì [1,10), through
+//         @for $i from 1 through $length{
+//             &:nth-child(#{$i}){
+//                 background: rgba(#000,$alpha:$i*0.1);
+//             }
+//         }
+//         // &:nth-child(1){
+//         // background: rgba(#000,$alpha:1.0);
+//         // }
+//     }
+// }
+
+//========================================
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    @for $i from 1 through 12{
+        .col-#{$i} {
+            width: (100% / 12) * $i;
+        }
+    }
+}
+
+.bg-red{
+    height: 50px;
+    background: red;
+}
+
+.bg-black{
+    height: 50px;
+    background: black;
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}

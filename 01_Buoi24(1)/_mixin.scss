@@ -1,0 +1,21 @@
+@mixin message($line: 3) {
+    margin: 50px;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+
+    @if($line == 3){
+        background: red;
+    }
+    @else{
+        background: yellow;
+    }
+    p{
+        overflow: hidden; // ẩn những dòng
+        text-overflow: ellipsis; // 3 chấm cuối
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+    }
+}

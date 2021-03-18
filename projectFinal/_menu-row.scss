@@ -1,0 +1,33 @@
+@mixin menu-row() {
+    ul {
+        background-color: #958458;
+        display: flex;
+        padding-left: 100px;
+    }
+    
+    li a {
+        display: block;
+        padding: 17px 16px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    li a:hover {
+        background-color:rgb(238, 226, 197);
+        color: #9b927a;
+    }
+    
+    li span {
+        display: block;
+        padding: 16px 5px 16px 15px;
+        color: white;
+        background-color: #4c311c;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+    li span span {
+        display: inline;
+        padding: 16px 5px 16px 25px;
+    }
+}

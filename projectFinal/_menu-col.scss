@@ -1,0 +1,29 @@
+@mixin menu-col() {
+    ul {
+        width: 247px;
+        padding: 0;
+        padding-left: 100px;
+        text-align: center;
+    }
+
+    li {
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #eaeaea;
+        border-left: 1px solid #eaeaea;
+        border-right: 1px solid #eaeaea;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #958458;
+        font-weight: 500;
+        display: block;
+    }
+
+    li a:hover {
+        background-color: #958458;
+        color: white;
+    }
+}
