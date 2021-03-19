@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vh;
+}
+
+.list-pizza {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+
+.list-pizza .pizza-item {
+  position: absolute;
+  -webkit-animation: pizza-transparent .4s infinite;
+          animation: pizza-transparent .4s infinite;
+}
+
+.list-pizza .pizza-item:nth-child(1) {
+  -webkit-transform: rotate(0deg) translate(-5px, -5px);
+          transform: rotate(0deg) translate(-5px, -5px);
+}
+
+.list-pizza .pizza-item:nth-child(2) {
+  left: 100px;
+  -webkit-transform: rotate(90deg) translate(-5px, -5px);
+          transform: rotate(90deg) translate(-5px, -5px);
+}
+
+.list-pizza .pizza-item:nth-child(3) {
+  bottom: 0;
+  -webkit-transform: rotate(270deg) translate(-5px, -5px);
+          transform: rotate(270deg) translate(-5px, -5px);
+}
+
+.list-pizza .pizza-item:nth-child(4) {
+  left: 100px;
+  bottom: 0;
+  -webkit-transform: rotate(180deg) translate(-5px, -5px);
+          transform: rotate(180deg) translate(-5px, -5px);
+}
+
+.list-pizza .pizza-item img {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes pizza-transparent {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pizza-transparent {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.list-pizza .pizza-item:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.list-pizza .pizza-item:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.list-pizza .pizza-item:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.list-pizza .pizza-item:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+/*# sourceMappingURL=style.css.map */
