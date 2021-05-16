@@ -1,0 +1,45 @@
+@import "media";
+
+$col: 12;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    // màn hình xs
+    @include xs {
+        // if(độ rộng của màn hình <= 576px)
+        @for $i from 1 through $col {
+            .col-xs-#{$i}{
+                width: (100% /12) * $i;
+            }
+        }
+    }
+    @include sm {
+        @for $i from 1 through $col {
+            .col-sm-#{$i}{
+                width: (100% /12) * $i;
+            }
+        }
+    }
+    @include md {
+        @for $i from 1 through $col {
+            .col-md-#{$i}{
+                width: (100% /12) * $i;
+            }
+        }
+    }
+    @include lg {
+        @for $i from 1 through $col {
+            .col-lg-#{$i}{
+                width: (100% /12) * $i;
+            }
+        }
+    }
+    @include xl {
+        @for $i from 1 through $col {
+            .col-xl-#{$i}{
+                width: (100% /12) * $i;
+            }
+        }
+    }
+}

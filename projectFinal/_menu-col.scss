@@ -1,9 +1,10 @@
 @mixin menu-col() {
     ul {
-        width: 247px;
+        width: 346px;
         padding: 0;
         padding-left: 100px;
         text-align: center;
+        background-color: white;
     }
 
     li {
@@ -13,6 +14,7 @@
         border-bottom: 1px solid #eaeaea;
         border-left: 1px solid #eaeaea;
         border-right: 1px solid #eaeaea;
+        position: relative;
     }
 
     li a {
@@ -25,5 +27,19 @@
     li a:hover {
         background-color: #958458;
         color: white;
+    }
+
+    .sub-menu {
+        width: 200px;
+        position: absolute;
+        left: 245px;
+        top: 0;
+        padding-left: 0;
+        display: none;
+        z-index: 99999;
+    }
+
+    li:hover .sub-menu {
+        display: block;
     }
 }

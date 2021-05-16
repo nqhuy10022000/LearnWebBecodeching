@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="hotro.js"></script>
+    <script src="sanPham.js"></script>
+    <script src="gioHang.js"></script>
+    <style>
+        :root {
+            --primary-color: #f7452e;
+            --light-color: #fff;
+        }
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+        #products {
+            max-width: 1100px;
+            margin: auto;
+            margin-top: 40px;
+        }
+        
+        #products .items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        #products .items .item {
+            border: 1px solid #ddd;
+            box-shadow: 1px 2px 4px #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #products .items .item .item-title {
+            font-size: 20px;
+            line-height: 30px;
+            margin: 10px 0;
+        }
+
+        #products .items .item .item-price {
+            margin-bottom: 20px;
+        }
+
+        #products .items .item .item-price .item-price-origin{
+            font-size: 12px;
+            text-decoration: line-through;
+        }
+        #products .items .item .item-price .item-price-sale{
+            font-size: 16px;
+            color: var(--primary-color);
+        }
+        .btn {
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        .btn-primary{
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+        #products .items .item .btn {
+            margin-left: auto;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <session id="products">
+        <!-- <div class="items">
+            <div class="item">
+                <div class="item-thumb">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFuoOjX2pE2QDbtGEA1QhDBDKTCp8Bsc0VbGuEn6Or9NT1gf-SgUh676xyAvyGv5ZhycFZcKpK&usqp=CAc" alt="">
+                </div>
+
+                <h2 class="item-title">iphone5</h2>
+                <div class="item-price">
+                    <span class="item-price-origin">5000000 đ</span>
+                    <span class="item-price-sale">4000000 đ</span>
+                </div>
+                <button class="btn btn-primary">Đưa vào giỏ hàng</button>
+            </div>
+            <div class="item">
+                <div class="item-thumb">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFuoOjX2pE2QDbtGEA1QhDBDKTCp8Bsc0VbGuEn6Or9NT1gf-SgUh676xyAvyGv5ZhycFZcKpK&usqp=CAc" alt="">
+                </div>
+
+                <h2 class="item-title">
+                    iphone5
+                </h2>
+                <div class="item-price">
+                    <span class="item-price-origin">
+                        5000000 đ
+                    </span>
+                    <span class="item-price-sale">
+                        4000000 đ
+                    </span>
+                </div>
+                <button class="btn btn-primary">Đưa vào giỏ hàng</button>
+            </div>
+            <div class="item">
+                <div class="item-thumb">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFuoOjX2pE2QDbtGEA1QhDBDKTCp8Bsc0VbGuEn6Or9NT1gf-SgUh676xyAvyGv5ZhycFZcKpK&usqp=CAc" alt="">
+                </div>
+
+                <h2 class="item-title">
+                    iphone5
+                </h2>
+                <div class="item-price">
+                    <span class="item-price-origin">
+                        5000000 đ
+                    </span>
+                    <span class="item-price-sale">
+                        4000000 đ
+                    </span>
+                </div>
+                <button class="btn btn-primary">Đưa vào giỏ hàng</button>
+            </div>
+            <div class="item">
+                <div class="item-thumb">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFuoOjX2pE2QDbtGEA1QhDBDKTCp8Bsc0VbGuEn6Or9NT1gf-SgUh676xyAvyGv5ZhycFZcKpK&usqp=CAc" alt="">
+                </div>
+
+                <h2 class="item-title">
+                    iphone5
+                </h2>
+                <div class="item-price">
+                    <span class="item-price-origin">
+                        5000000 đ
+                    </span>
+                    <span class="item-price-sale">
+                        4000000 đ
+                    </span>
+                </div>
+                <button class="btn btn-primary">Đưa vào giỏ hàng</button>
+            </div>
+            <div class="item">
+                <div class="item-thumb">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFuoOjX2pE2QDbtGEA1QhDBDKTCp8Bsc0VbGuEn6Or9NT1gf-SgUh676xyAvyGv5ZhycFZcKpK&usqp=CAc" alt="">
+                </div>
+
+                <h2 class="item-title">
+                    iphone5
+                </h2>
+                <div class="item-price">
+                    <span class="item-price-origin">
+                        5000000 đ
+                    </span>
+                    <span class="item-price-sale">
+                        4000000 đ
+                    </span>
+                </div>
+                <button class="btn btn-primary">Đưa vào giỏ hàng</button>
+            </div>
+        </div> -->
+    </session>
+    <script>
+        var jsonDanhSachSanPham = localStorage.getItem('danhSachSanPham');
+        var danhSachSanPham = JSON.parse(jsonDanhSachSanPham);
+        console.log(danhSachSanPham);
+
+        var HTML = chuyenDanhSachDoiTuongThanhHTML(danhSachSanPham);
+
+        var nodeProducts = document.getElementById('products');
+        nodeProducts.innerHTML = HTML;
+
+        function onClickDuaVaoGioHang(idSanPham) {
+            alert('onclick đưa vào giỏ hàng với sản phẩm có id là:' + idSanPham);
+
+            var danhSachItemGioHang = layDanhSachItemGioHang();
+            var coTonTaiTrongDanhSachItemGioHang = false;
+            for(var i = 0;i < danhSachSanPham.length; i++){
+                var itemGioHangHienTai = danhSachSanPham[i];
+                if (itemGioHangHienTai.idSanPham == idSanPham) {
+                    danhSachSanPham[i].soLuong++;
+                    coTonTaiTrongDanhSachItemGioHang = true;
+                }
+            }
+
+            if(coTonTaiTrongDanhSachItemGioHang == false) {
+                var itemGioHang = TaoDoiTuongItemGioHang(idSanPham,1);
+                danhSachItemGioHang.push(itemGioHang);
+            }
+
+            luuDanhSachItemGioHangVaoLocalStorage(danhSachItemGioHang);
+        }
+    </script>
+</body>
+</html>

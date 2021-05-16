@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.slider-container {
+    height: 300px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.slider-icon {
+    position: absolute;
+    top: 50%;
+    i {
+        font-size: 30px;
+        cursor: pointer;
+    }
+    &.right {
+        right: 0;
+    } 
+}

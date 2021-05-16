@@ -1,0 +1,136 @@
+@mixin container-sub-noithat {
+    .container-sub-noithat {
+        background: white;
+        max-width: 85%;
+        margin-top: 40px;
+        margin-left: 100px;
+        display: flex;
+        .menu-col {
+            max-width: 17%;
+            width: 17%;
+            ul {
+                li {
+                    padding: 6px;
+                    &:nth-child(1) {
+                        display: flex;
+                        justify-content: space-around;
+                        background-color: #6d6855;
+                        border-bottom: 2px solid #6d6855;
+                        margin-bottom: 25px;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: white;
+                        padding: 17px 10px;
+                        text-transform: uppercase;
+                    }
+                    a {
+                        text-decoration: none;
+                        padding-left: 25px;
+                        color: #9b927a;
+                    }
+                }
+            }
+        }
+        .body-item {
+            max-width: 83%;
+            width: 83%;
+            .menu-row {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    border-bottom: 2px solid #6d6855;
+                    padding: 4px;
+                    li {
+                        display: block;
+                        padding: 15px 10px;
+                        &:hover {
+                            background-color: #c5bc97;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #9b927a;
+                        }
+                    }
+                }
+            }
+            .image {
+                display: flex;
+                .banner {
+                    max-width: 41%;
+                    width: 41%;
+                    img {
+                        object-fit: contain;
+                    }
+                }
+                .list-item {
+                    max-width: 60%;
+                    width: 60%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .item {
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        flex-direction: column;
+                        flex-basis: calc(100% / 3);
+                        border: 1px solid #ebe8e1;
+                        padding: 10px;
+                        position: relative;
+                        a {
+                            text-decoration: none;
+                            overflow: hidden;
+                            .title {
+                                height: 34px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                // -webkit-box-orient: vertical;
+                                // -webkit-line-clamp: 2;
+                                color: #9b927a;
+                            }
+                            .price {
+                                span:nth-child(1) {
+                                    color: #ff3366;
+                                    font-size: 15px;
+                                }
+                                span:nth-child(2) {
+                                    color: #cccccc;
+                                    font-size: 15px;
+                                    text-decoration: line-through;
+                                    font-size: 12px;
+                                }
+                            }
+                            .image-box {
+                                img {
+                                    max-width: 100%;
+                                    object-fit: contain;
+                                    transition: transform .5s ease-in-out;
+                                    transform: scale(1);
+                                    transform-origin: top right;
+                                }
+                                &:hover {
+                                    img {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }
+                        }
+                        .add-cart {
+                            border: none;
+                            border-radius: 5px;
+                            padding: 10px 20px;
+                            background-color: #bcb7b2;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            font-size: 10px;
+                            &:hover {
+                                color: white;
+                                background-color: #ff3366;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

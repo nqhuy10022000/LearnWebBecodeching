@@ -1,26 +1,51 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
 }
 
 @import "header";
 @import "brand";
+@import "menu-row";
+@import "menu-col";
+@import "slideShow";
 .container {
     @include header();
     @include brand();
+    .menu-row {
+        @include menu-row();
+    }
+
+    .menu-col {
+        @include menu-col();
+    }
+
+    .slideShow-container {
+        @include slideShow();
+    }
 }
 
-@import "menu-row";
-.menu-row {
-    @include menu-row();
+@import "./container-sub-thoitrang";
+@import "./container-sub-thethao";
+@import "./container-sub-trangsuc";
+@import "./container-sub-dienlanh";
+@import "./container-sub-noithat";
+body {
+    background-color: #eaeaea;
+    @include container-sub-thoitrang();
+    @include container-sub-thethao();
+    @include container-sub-trangsuc();
+    @include container-sub-dienlanh();
+    @include container-sub-noithat();
 }
 
-@import "menu-col";
-.menu-col {
-    @include menu-col();
+@import "container-info";
+.container-info {
+    @include container-info();
 }
 
-@import "slideShow";
-.slideShow-container {
-    @include slideShow();
+@import "container-footer";
+.container-footer {
+    @include container-footer();
 }

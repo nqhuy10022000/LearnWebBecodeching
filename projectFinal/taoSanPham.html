@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="hotro.js"></script>
+    <script src="sanPham.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .them-moi-san-pham {
+            width: 30%;
+            border: 1px solid #ddd;
+            margin: auto;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 2px 2px 5px #ddd;
+        }
+
+        .them-moi-san-pham label,input {
+            width: 100%;
+            display: block;
+        }
+
+        .them-moi-san-pham label {
+            margin-top: 20px;
+        }
+
+        .them-moi-san-pham input {
+            margin-top: 5px;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .them-moi-san-pham button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f7442e;
+            color: #fff;
+        }
+
+        .them-moi-san-pham button:hover {
+            background-color: #c53624;
+        }
+    </style>
+</head>
+<body>
+    <div class="them-moi-san-pham">
+        <label for="hinhAnh">Hình ảnh sản phẩm</label>
+        <input type="text" id="hinhAnh">
+
+        <label for="ten">Tên sản phẩm</label>
+        <input type="text" id="ten">
+
+        <label for="giaGoc">Giá gốc</label>
+        <input type="nunber" id="giaGoc">
+
+        <label for="phanTramGiamGia">Giảm giá(%) - Giá trị từ 0 -1</label>
+        <input type="number" id="phanTramGiamGia">
+
+        <label for="khuVuc">Khu Vực</label>
+        <input type="text" id="khuVuc">
+
+        <button onclick="onClickTaoSanPham()">Tạo sản phẩm</button>
+    </div>
+
+    <script>
+        var danhSachSanPham = localStorage.getItem('danhSachSanPham');
+        if(danhSachSanPham == null) {
+            var danhSachSanPham = new Array();
+        }
+        console.log(danhSachSanPham);
+
+        function onClickTaoSanPham() {
+            console.log('gọi hàm onClickTaoSanPham()');
+
+            var nodeHinhAnh = document.getElementById('hinhAnh');
+            var hinhAnh = nodeHinhAnh.value;
+            console.log('Hình ảnh là: ' + hinhAnh);
+            // nodeHinhAnh.value = '';
+
+            var nodeTen = document.getElementById('ten');
+            var ten = nodeTen.value;
+            console.log('Tên là: ' + ten);
+            // nodeTen.value='';
+
+            var nodeGiaGoc = document.getElementById('giaGoc');
+            var giaGoc = parseInt(nodeGiaGoc.value);
+            console.log('Gia goc là: ' + giaGoc);
+            // nodeGiaGoc.value='';
+
+            var nodePhanTramGiamGia = document.getElementById('phanTramGiamGia');
+            var phanTramGiamGia = parseFloat(nodePhanTramGiamGia.value);
+            console.log('Phần trăm giảm giá là: ' + phanTramGiamGia);
+            // nodePhanTramGiamGia.value='';
+
+            var nodeKhuVuc = document.getElementById('khuVuc');
+            var khuVuc = nodeKhuVuc.value;
+            console.log('Khu vực là: ' + khuVuc);
+            // nodeKhuVuc.value='';
+
+            var sanPham = TaoDoiTuongSanPham(hinhAnh,ten,giaGoc,phanTramGiamGia);
+            console.log(sanPham);
+
+            console.log('Tên của sản phẩm vào là: ' + sanPham.ten + 'giá bán của sản phẩm là:' + sanPham.tinhGiaBan());
+        
+            danhSachSanPham.push(sanPham);
+            console.log('Danh sách các sản phẩm là:');
+            console.log(danhSachSanPham);
+
+            var jsonDanhSachSanPham = JSON.stringify(danhSachSanPham);
+            localStorage.setItem('danhSachSanPham',jsonDanhSachSanPham);
+            alert('Thêm sản phẩm thành công');
+        }
+    </script>
+</body>
+</html>

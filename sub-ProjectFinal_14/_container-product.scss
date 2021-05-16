@@ -1,0 +1,229 @@
+@mixin container-product {
+    padding-top: 20px;
+    max-width: 85%;
+    margin-left: 100px;
+    background-color: white;
+    display: flex;
+    .left {
+        max-width: 70%;
+        ul {
+            display: flex;
+            padding-bottom: 10px;
+            li {
+                a {
+                    text-decoration: none;
+                    color: #AAAAAA;
+                }
+                i {
+                    color: #AAAAAA;
+                    padding: 0 10px;
+                }
+                span {
+                    color: #ff3366;
+                }
+            }
+        }
+        .detail-item {
+            display: flex;
+            .image {
+                padding-left: 10px;
+                img {
+                    border: 5px solid #eeeeee;
+                    border-radius: 5px;
+                    object-fit: contain;
+                }
+            }
+            .info-item {
+                padding-left: 100px;
+                .main-info {
+                    .name-item {
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #373737;
+                        margin-bottom: 15px;
+                    }
+                    .price-new {
+                        margin-top: 60px;
+                        color: #ff3366;
+                        font-size: 26px;
+                        margin-right: 15px;
+                    }
+                    .price-old {
+                        text-decoration: line-through;
+                        font-size: 18px;
+                        color: #aaaaaa;
+                        margin-right: 15px;
+                    }
+                    p {
+                        margin: 30px 0;
+                        font-weight: bold;
+                        font-size: 16px;
+                        color: #6a6a6a;
+                    }
+                }
+                .summary {
+                    line-height: 24px;
+                    border: 1px solid #aaaaaa;
+                    border-left-color: transparent;
+                    border-right-color: transparent;
+                    padding: 10px 0;
+                    margin-bottom: 15px;
+                }
+                .chose-color {
+                    padding-bottom: 10px;
+                    .color {
+                        button {
+                            border: 2px solid black;
+                            background-color: white;
+                            color: black;
+                            padding: 10px 20px;
+                            font-size: 15px;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            &:nth-child(1){
+                                border-color: #f44336;
+                                color: red;
+                                &:hover {
+                                    background: #f44336;
+                                    color: white;
+                                }
+                            }
+                            &:nth-child(2) {
+                                border-color: #ff9800;
+                                color: orange;
+                                &:hover {
+                                    background: #ff9800;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .input-quantity {
+                    padding-bottom: 10px;
+                    input {
+                        padding: 5px 0px;
+                    }
+                }
+                .out-of-stock {
+                    padding-bottom: 10px;
+                    button {
+                        padding: 10px 20px;
+                        border: 1px solid #958457;
+                        border-radius: 5px;
+                        background-color: #958457;
+                        color: white;
+                        font-weight: 700;
+                        font-size: 15px;
+                    }
+                }
+                .form-hotline {
+                    padding-bottom: 10px;
+                    p {
+                        font-size: 13px;
+                        font-weight: 700;
+                        padding-bottom: 5px;
+                    }
+                    form {
+                        margin:auto;
+                        max-width:300px;
+                        margin-left: 0px;
+                        &.example {
+                            input[type=text] {
+                                padding: 6px;
+                                font-size: 17px;
+                                border: 1px solid grey;
+                                float: left;
+                                width: 70%;
+                                background: #f1f1f1;
+                            }
+                            button {
+                                float: left;
+                                width: 30%;
+                                padding: 5px 20px;
+                                background: #958457;
+                                color: white;
+                                font-size: 10px;
+                                border: 1px solid grey;
+                                border-left: none;
+                                cursor: pointer;
+                            }
+                            &::after {
+                                content: "";
+                                clear: both;
+                                display: table;
+                            }
+                        }
+                    }     
+                }
+            }
+        }
+    }
+    .right {
+        .sidenav {
+            margin-left: 30px;
+            // height: 100%;
+            width: 300px;
+            border: 1px solid #dddddd;
+            // position: fixed;
+            // z-index: 1;
+            // top: 0;
+            // left: 0;
+            background-color: #f6f6f6;
+            overflow-x: hidden;
+            // padding-top: 20px;
+            span {
+                padding: 13px 8px 13px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #818181;
+                display: block;
+                border: none;
+                background: none;
+                width: 100%;
+                text-align: left;
+                cursor: pointer;
+                outline: none;
+                background-color: #4c311d;
+                color: white;
+            }
+            a, .dropdown-btn {
+                padding: 10px 8px 10px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #818181;
+                display: block;
+                border: 1px dashed #818181;
+                border-top-color: transparent;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                background: none;
+                width: 100%;
+                text-align: left;
+                cursor: pointer;
+                outline: none;
+                &:hover {
+                    color: #ff3366;
+                }
+            }
+            .main {
+                margin-left: 200px;
+                font-size: 20px; 
+                padding: 0px 10px;
+            }
+            .active {
+                background-color: #f6f6f6;
+                color: #818181;
+            }
+            .dropdown-container {
+                display: none;
+                background-color: #f6f6f6;
+                padding-left: 8px;
+            }
+            .fa-caret-down {
+                float: right;
+                padding-right: 8px;
+            }
+        }         
+    }
+} 
